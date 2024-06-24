@@ -11,7 +11,7 @@ export const MovieDetail = () => {
     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
     : Backup;
 
-const pageTitle=useTitle(movie.title);
+useTitle(movie.title);
 
   useEffect(() => {
     async function fetchMovie() {

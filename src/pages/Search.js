@@ -8,7 +8,7 @@ export const Search = ({apiPath}) => {
   const queryTerm=SearchParams.get("q");
 
   const {data:movies} = useFetch(apiPath,queryTerm);
-  const pageTitle=  useTitle(`Search Result for ${queryTerm}/cinemate`);
+   useTitle(`Search Result for ${queryTerm}/cinemate`);
 
   return (
     <main className="pt-16  ">
