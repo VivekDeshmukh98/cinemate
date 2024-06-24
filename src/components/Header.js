@@ -1,4 +1,5 @@
 
+
 import { Link, NavLink ,useNavigate} from 'react-router-dom';
 import Logo from "../assets/logo.png";
 import { useEffect, useState } from 'react';
@@ -36,7 +37,7 @@ export const Header = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={Logo} className="mr-2 h-6 sm:h-9" alt="Cinemate Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cine Mate</span>
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CineMate</span>
           </Link>
           <div id="mobile-nav" className="flex md:order-2">
             <button onClick={() => setDarkMode(!darkMode)} className="flex items-center p-2 mr-2 text-xs font-medium text-gray-700 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600">
